@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="css/rtl.css" />
     <script src="js/html5shiv.min.js"></script>
     <script src="js/respond.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
 </head>
 <body>
 
@@ -240,28 +243,28 @@
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="count-box">
                         <i class="far fa-smile"></i>
-                        <span>232</span>
+                        <span class="number">232</span>
                         <p>Happy Clients</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="count-box">
                         <i class="fas fa-journal-whills"></i>
-                        <span>521</span>
+                        <span class="number">521</span>
                         <p>Projects</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="count-box">
                         <i class="fas fa-headset"></i>
-                        <span>1463</span>
+                        <span class="number">1463</span>
                         <p>Hours Of Support</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="count-box">
                         <i class="fas fa-user-friends"></i>
-                        <span>15</span>
+                        <span class="number">15</span>
                         <p>Hard Workers</p>
                     </div>
                 </div>
@@ -296,6 +299,10 @@
         </div>
     </section>
     <!-- end section clients -->
+
+    <script>
+        $(".number").counterUp({time:2000});
+    </script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/file.js"></script>
