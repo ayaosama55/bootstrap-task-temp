@@ -1,5 +1,6 @@
 // select skills selector
 let ourSkills = document.querySelector(".skills");
+let toTopButton = document.querySelector(".toTop");
 
 window.onscroll = function () {
 
@@ -18,5 +19,18 @@ window.onscroll = function () {
             skills.style.width = skills.dataset.progress;
         });
     }
+
+    if (window.scrollY > 500) {
+        toTopButton.style.display = "block";
+    } else {
+        toTopButton.style.display = "none";
+    }
 }
 
+
+toTopButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    document.querySelector(".top").scrollIntoView({
+        behavior: "smooth"
+    });
+});

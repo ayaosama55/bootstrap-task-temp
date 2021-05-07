@@ -9,6 +9,25 @@ body{
     -o-box-sizing: border-box;
     box-sizing: border-box;
 }
+
+/* start to top button */
+.toTop {
+    background-color: #106eea;
+    padding: 7px 10px;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 17px;
+    position: fixed;
+    z-index: 1000;
+    bottom: 10px;
+    right: 20px;
+    cursor: pointer;
+    transition: .4s all ease-in-out;
+}
+.toTop:hover {
+    background-color: #3284f1;
+}
+/* end to op button */
 /** start section topbar **/
 
 .topbar {
@@ -167,7 +186,8 @@ body{
     background-color: #f6f9fe;
     padding: 50px 0;
 }
-.about-us .container .text-center >span {
+.about-us .container .text-center >span,
+.services .container .text-center > span {
     background-color: #e7f1fd;
     padding: 8px 15px;
     border-radius: 50px;
@@ -176,14 +196,17 @@ body{
     color: #106eea;
     font-size: 13px;
 }
-.about-us .container .text-center h2 {
+.about-us .container .text-center h2,
+.services .container .text-center h2 {
     font-weight: bold;
     margin: 15px;
 }
-.about-us .container .text-center h2 span {
+.about-us .container .text-center h2 span,
+.services .container .text-center h2 span  {
     color: #106eea;
 }
-.about-us .container .text-center p {
+.about-us .container .text-center p,
+.services .container .text-center:first-of-type p {
     font-size: 18px;
     margin: auto;
     letter-spacing: 1px;
@@ -298,4 +321,55 @@ body{
 }
 .clients .container img:hover {
     transform: scale(1.2);
+}
+/* end clients */
+
+/* start services */
+.services {
+    padding: 60px 0;
+}
+.services .serv-box {
+    border: 1px solid #e2eefd;
+    padding: 80px 20px;
+    transition: all ease-in-out 0.3s;
+    background: #fff;
+    margin-bottom: 20px;
+}
+.services .serv-box:hover {
+    border-color: #fff;
+    box-shadow: 0px 0 25px 0 rgb(16 110 234 / 10%);
+}
+.services .serv-box .icon {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    background: #f1f6fe;
+    border-radius: 4px;
+    border: 1px solid #deebfd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: ease-in-out 0.3s;
+}
+.services .serv-box:hover .icon {
+    border-color: #106eea;
+}
+.services .serv-box .icon i {
+    color: #3b8af2;
+    font-size:28px;
+}
+.services .serv-box .icon i:hover {
+    color: #106eea;
+}
+.services .serv-box h3 {
+    font-weight: bold;
+    transition: ease-in-out 0.3s;
+}
+.services .serv-box p {
+    font-size: 16px;
+    color: #333;
+}
+.services .serv-box:hover h3 {
+    color: #106eea;
 }
