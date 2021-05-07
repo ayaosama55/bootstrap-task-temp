@@ -285,6 +285,9 @@ body{
     background-color: #f6f9fe;
     padding: 40px 0;
 }
+.clients .client-box {
+    height: 60px;
+}
 .clients .container img {
     max-width: 45%;
     transition: all 0.4s ease-in-out;
