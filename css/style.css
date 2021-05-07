@@ -1,0 +1,298 @@
+body{
+    height: 7000px;
+}
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/** start section topbar **/
+
+.topbar {
+    background-color: #106eea;
+    color: #fff;
+}
+.topbar .info {
+    display: inline-block;
+    margin-right: 15px;
+    line-height: 40px;
+}
+.topbar .info i {
+    margin-right: 3px;
+}
+.topbar .info a {
+    color: #fff;
+}
+.topbar ul {
+    margin-bottom: 0;
+}
+.topbar .social {
+    text-align: right;
+}
+.topbar .social li {
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+    line-height: 40px;
+    color: rgba(255, 255, 255, 0.7);
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.topbar .social li:hover,
+.topbar .social li:focus {
+    color: #fff;
+}
+/** end section topbar **/
+
+/** start header section **/
+.header-section{
+    min-height: 700px;
+    background-image: url("../imgs/hero-bg.jpg");
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+.header-section .overlay{
+    width: 100%;
+    min-height: 700px;
+    background-color: rgba(255,255,255,.5);
+}
+.header-section .content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.header-section .content h1 {
+    font-size: 55px;
+    font-weight: bold;
+}
+.header-section .content h1 span {
+    color: #106eea;
+}
+.header-section .content .lead {
+    font-size: 25px;
+}
+.header-section .head-btn {
+    background-color: #106eea;
+    margin-right: 20px;
+}
+.header-section .content >span  {
+    font-size: 23px;
+    cursor: pointer;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+.header-section .content >span i {
+    font-size: 25px;
+    color: #106eea;
+}
+.header-section .content >span:hover {
+    color: #106eea;
+}
+@media(max-width:767px){
+    .header-section .content h1{
+        font-size: 40px;
+    }
+    .header-section .content .lead {
+        font-size: 20px;
+    }
+}
+/** end header section **/
+
+/** start features **/
+
+.features {
+    padding: 50px 0;
+}
+.features .feat {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.features .feat-box {
+    border-radius: 10px;
+    box-shadow: 0 0 29px 0 rgb(68 88 144 / 12%);
+    padding: 20px;
+    position: relative;
+}
+.features .feat-box i {
+    color: #106eea;
+    margin: 10px 10px 0;
+}
+.features .feat-box h3 {
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+.features .feat-box .lead {
+    font-size: 17px;
+}
+
+/** end features **/
+
+.features .feat-box:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    background: #106eea;
+    transition: .6s;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 6px;
+}
+
+.features .feat-box:hover:before {
+    height: 100%;
+}
+.features .feat-box:hover i,
+.features .feat-box:hover h3,
+.features .feat-box:hover p
+{
+    color: #fff;
+}
+
+/*********************/
+
+/* start section about us */
+
+.about-us {
+    background-color: #f6f9fe;
+    padding: 50px 0;
+}
+.about-us .container .text-center >span {
+    background-color: #e7f1fd;
+    padding: 8px 15px;
+    border-radius: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #106eea;
+    font-size: 13px;
+}
+.about-us .container .text-center h2 {
+    font-weight: bold;
+    margin: 15px;
+}
+.about-us .container .text-center h2 span {
+    color: #106eea;
+}
+.about-us .container .text-center p {
+    font-size: 18px;
+    margin: auto;
+    letter-spacing: 1px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+.about-us .container .row .content h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #535353;
+}
+.about-us .container .row .content >p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    letter-spacing: .6px;
+}
+.about-us .container .row .content >p:first-of-type {
+    font-style: italic;
+}
+.about-us .container .media .media-left i {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    line-height: 60px;
+    font-size: 19px;
+    text-align: center;
+    border-radius: 50%;
+    color: #106eea;
+    box-shadow: 0px 6px 15px rgb(16 110 234 / 12%);
+}
+.about-us .container .media .media-body h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #686868;
+}
+.about-us .container .media .media-body p{
+    font-size: 15px;
+    letter-spacing: .6px;
+
+}
+/* end section about us */
+/* start section skills */
+.skills {
+    padding: 50px 0;
+}
+.skills span {
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #222222;
+    font-size: 13px;
+}
+.skills span .val {
+    font-style: normal;
+    float: right;
+}
+/* end sction skills */
+.counts{
+    padding: 40px 0;
+}
+.counts .count-box {
+    padding: 30px 30px 25px 30px;
+    width: 100%;
+    position: relative;
+    background: #f1f6fe;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.counts .count-box i {
+    background-color: #106eea;
+    width: 60px;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 24px;
+    border: 5px solid #fff;
+    padding: 11px 0;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -28px;
+}
+.counts .count-box span {
+    font-size: 36px;
+    display: block;
+    font-weight: 600;
+    color: #062b5b;
+}
+.counts .count-box p {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+/* start section clients */
+
+.clients {
+    background-color: #f6f9fe;
+    padding: 40px 0;
+}
+.clients .container img {
+    max-width: 45%;
+    transition: all 0.4s ease-in-out;
+    display: inline-block;
+    padding: 15px 0;
+    max-height: 60px;
+    margin: auto;
+}
+.clients .container img:hover {
+    transform: scale(1.2);
+}

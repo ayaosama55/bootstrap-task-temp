@@ -1,0 +1,86 @@
+.navbar-default {
+    background-color: #fff;
+    border: none;
+}
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        padding-bottom: 5px;
+    }
+}
+.navbar{
+    margin-bottom: 5px;
+    box-shadow: 3px 4px 11px rgb(0 0 0 / 19%);
+}
+.navbar-nav > li {
+    margin-right: 10px;
+    font-size: 16px;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #000;
+}
+.dropdown-menu > li > a {
+    color: #000;
+}
+.dropdown-menu > li > a:hover {
+    color: #106eea;
+    background-color: transparent;
+}
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #222
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+        color: #106eea;
+    }
+}
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    max-height: none;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #fff;
+    background-color: #106eea;
+}
+.dropdown-menu .divider {
+    background-color: #106eea;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav  > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav  > li > a:hover {
+    background-color: transparent;
+    color: #106eea;
+}
+.navbar-default .navbar-brand {
+    color: #000;
+    font-weight: bold;
+    font-size: 30px;
+}
+.navbar-default .navbar-brand:hover {
+    color: #000;
+}
+.navbar-default .navbar-brand span {
+    color: #106eea;
+}
+@media(max-width:991px){
+    .nav > li > a {
+        padding: 10px;
+    }
+    .navbar-nav > li {
+        margin-right: 0;
+        margin-top: 5px;
+    }
+}
+
+.about-us .container .media {
+    padding-bottom: 20px;
+}
+.skills .progress {
+    height: 15px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #e2eefd;
+    border-radius: 0;
+    box-shadow: none;
+}
