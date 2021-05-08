@@ -25,8 +25,13 @@ window.onscroll = function () {
     } else {
         toTopButton.style.display = "none";
     }
-}
 
+    if (window.scrollY > 500){
+        document.querySelector(".topbar").style.display = "none";
+    } else {
+        document.querySelector(".topbar").style.display = "block";
+    }
+}
 
 toTopButton.addEventListener("click", (e) => {
     e.preventDefault();
@@ -34,3 +39,44 @@ toTopButton.addEventListener("click", (e) => {
         behavior: "smooth"
     });
 });
+
+var menucount = document.getElementById("porlist");
+var menubar = document.querySelectorAll(".portfolio ul li")
+var prodBox = document.querySelectorAll(".portfolio .img-box");
+var x;
+for (x = 0; x < menubar.length; x++) {
+    menubar[x].addEventListener("click", function() {
+        var current = menucount.getElementsByClassName("active");
+        current[0].classList.remove("active");
+        this.className += " active";
+        if (this.dataset.porlist == "all") {
+            for(var t = 0; t < prodBox.length; t = t + 1){
+                prodBox[t].style.display = "block";
+            }
+        } else if (this.dataset.porlist == "app") {
+            for(var t = 0; t < prodBox.length; t = t + 1){
+                if (prodBox[t].dataset.kind == "app") {
+                    prodBox[t].style.display = "block";
+                } else {
+                    prodBox[t].style.display = "none";
+                }
+            }
+        } else if (this.dataset.porlist == "card") {
+            for(var t = 0; t < prodBox.length; t = t + 1){
+                if (prodBox[t].dataset.kind == "card") {
+                    prodBox[t].style.display = "block";
+                } else {
+                    prodBox[t].style.display = "none";
+                }
+            }
+        } else if (this.dataset.porlist == "web") {
+            for(var t = 0; t < prodBox.length; t = t + 1){
+                if (prodBox[t].dataset.kind == "web") {
+                    prodBox[t].style.display = "block";
+                } else {
+                    prodBox[t].style.display = "none";
+                }
+            }
+        }
+    });
+}
