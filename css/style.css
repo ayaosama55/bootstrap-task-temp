@@ -711,7 +711,6 @@ body{
     font-size: 20px;
     cursor: pointer;
 }
-.ques .ques-list li p:first-of-type:hover,
 .ques .ques-list li p:first-of-type.active {
     color: #106eea;
 }
