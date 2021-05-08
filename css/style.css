@@ -724,3 +724,8 @@ body{
 .ques .ques-list li p.hid{
     display: none;
 }
+@media(max-width:550px){
+    .ques .ques-list li p:first-of-type {
+        font-size: 18px;
+    }
+}
