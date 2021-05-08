@@ -1,3 +1,6 @@
+window.onload = function () {
+    document.querySelector(".loading-page").style.display = "none"; 
+}
 // select skills selector
 let ourSkills = document.querySelector(".skills");
 let toTopButton = document.querySelector(".toTop");
