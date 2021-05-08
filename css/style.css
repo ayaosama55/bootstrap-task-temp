@@ -1,5 +1,5 @@
 body{
-    height: 10000px;
+    height: 15000px;
 }
 * {
     padding: 0;
@@ -260,7 +260,8 @@ body{
 }
 .about-us .container .text-center >span,
 .services .container .text-center > span,
-.portfolio .container .text-center >span {
+.portfolio .container .text-center >span,
+.team .container .text-center >span {
     background-color: #e7f1fd;
     padding: 8px 15px;
     border-radius: 50px;
@@ -271,18 +272,21 @@ body{
 }
 .about-us .container .text-center h2,
 .services .container .text-center h2,
-.portfolio .container .text-center h2 {
+.portfolio .container .text-center h2,
+.team .container .text-center h2 {
     font-weight: bold;
     margin: 15px;
 }
 .about-us .container .text-center h2 span,
 .services .container .text-center h2 span,
-.portfolio .container .text-center h2 span  {
+.portfolio .container .text-center h2 span,
+.team .container .text-center h2 span  {
     color: #106eea;
 }
 .about-us .container .text-center p,
 .services .container .text-center:first-of-type p,
-.portfolio .container .text-center:first-of-type p {
+.portfolio .container .text-center:first-of-type p,
+.team .container .text-center:first-of-type p {
     font-size: 18px;
     margin: auto;
     letter-spacing: 1px;
@@ -556,4 +560,54 @@ body{
 }
 .portfolio .image:hover .card {
     display: block;
+}
+/* start section team */
+.team {
+    padding: 50px 0;
+    background-color: #f6f9fe;
+}
+.team .team-box{
+    margin-bottom: 20px;
+}
+.team .team-box .image{
+    position: relative;
+}
+.team .team-box .image ul {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    display: none;
+    transition: .4s display ease-in-out;
+}
+.team .team-box:hover ul {
+    display: block;
+}
+.team .team-box .image ul li {
+    display: inline-block;
+    color: #fff;
+    background-color: rgba(16, 110, 234, 0.8);
+    padding: 4px 7px;
+    margin: 5px;
+    border-radius: 3px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.team .team-box .image ul li:hover {
+    background-color: #3b8af2;
+}
+.team .team-box .info {
+    background-color: #fff;
+    padding: 20px;
+}
+.team .team-box .info h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.team .team-box .info p {
+    letter-spacing: 1px;
 }
