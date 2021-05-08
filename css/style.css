@@ -263,7 +263,8 @@ body{
 .portfolio .container .text-center >span,
 .team .container .text-center >span,
 .pricing .container .text-center >span,
-.ques .container .text-center >span {
+.ques .container .text-center >span,
+.contact .container .text-center >span {
     background-color: #e7f1fd;
     padding: 8px 15px;
     border-radius: 50px;
@@ -277,7 +278,8 @@ body{
 .portfolio .container .text-center h2,
 .team .container .text-center h2,
 .pricing .container .text-center h2,
-.ques .container .text-center h2 {
+.ques .container .text-center h2,
+.contact .container .text-center h2 {
     font-weight: bold;
     margin: 15px;
 }
@@ -286,7 +288,8 @@ body{
 .portfolio .container .text-center h2 span,
 .team .container .text-center h2 span,
 .pricing .container .text-center h2 span,
-.ques .container .text-center h2 span {
+.ques .container .text-center h2 span,
+.contact .container .text-center h2 span {
     color: #106eea;
 }
 .about-us .container .text-center p,
@@ -294,7 +297,8 @@ body{
 .portfolio .container .text-center:first-of-type p,
 .team .container .text-center:first-of-type p,
 .pricing .container .text-center:first-of-type p,
-.ques .container .text-center:first-of-type p {
+.ques .container .text-center:first-of-type p,
+.contact .container .text-center:first-of-type p {
     font-size: 18px;
     margin: auto;
     letter-spacing: 1px;
@@ -726,6 +730,62 @@ body{
 }
 @media(max-width:550px){
     .ques .ques-list li p:first-of-type {
-        font-size: 18px;
+        font-size: 17px;
     }
+}
+/*******************************/
+/* start contact */
+.contact {
+    padding: 60px 0;
+}
+.contact .info-box {
+    margin-bottom: 20px;
+}
+.contact .info {
+    color: #444444;
+    box-shadow: 0 0 30px rgb(214 215 216 / 30%);
+    padding: 20px 0 30px 0;
+}
+.contact .info i {
+    font-size: 32px;
+    color: #106eea;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    border: 2px dotted #b3d1fa;
+}
+.contact .info h3 {
+    font-size: 20px;
+    color: #777777;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.contact .info p {
+    padding: 0;
+    line-height: 24px;
+    font-size: 14px;
+}
+.contact .cont-box .form {
+    box-shadow: 0 0 30px rgb(214 215 216 / 40%);
+    padding: 30px;
+}
+.contact .cont-box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contact .cont-box input,
+.contact .cont-box textarea{
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 17px;
+}
+.contact .cont-box textarea {
+    min-height: 145px;
+}
+.contact .cont-box button {
+    margin-bottom: 10px;
+    background-color: #106eea;
+    width: 100%;
 }
