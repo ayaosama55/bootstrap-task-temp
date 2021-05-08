@@ -521,3 +521,39 @@ body{
     height: 100%;
     width: 100%;
 }
+.portfolio .image .card {
+    display: none;
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    bottom: 50px;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+}
+.portfolio .image .card p{
+    float: left;
+}
+.portfolio .image .card p span {
+    font-weight: bold;
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.portfolio .image .card .icon {
+    float: right;
+    padding: 20px 0;
+    font-size: 17px;
+}
+.portfolio .image .card .icon i {
+    margin-right: 5px;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+}
+.portfolio .image .card .icon i:hover {
+    color: #106eea;
+}
+.portfolio .image:hover .card {
+    display: block;
+}
