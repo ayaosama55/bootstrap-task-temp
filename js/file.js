@@ -83,3 +83,16 @@ for (x = 0; x < menubar.length; x++) {
         }
     });
 }
+
+let quesList = document.querySelectorAll(".ques .ques-list li");
+let ansList = document.querySelectorAll(".ques .ques-list li .answer");
+let i = document.querySelectorAll(".ques .ques-list li .question i")
+quesList.forEach((e) => {
+    e.children[0].addEventListener("click", function() {
+        this.classList.toggle("active");
+        this.children[0].classList.toggle("hid");
+        this.children[1].classList.toggle("hid");
+        e.children[1].classList.toggle("hid");
+    });
+    
+})
